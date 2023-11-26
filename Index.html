@@ -4,14 +4,42 @@
 <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
 <title>Home</title>
 <link rel="stylesheet" href="zeldastylesheet.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 <style>
-img {
-background: url("images/selfportrait1.png");
- background-repeat: no-repeat;
-  background-position: right bottom;
-  position: absolute;
-  width: 50%;
-  height:auto;
+.mainbit {
+padding: 20px;
+}
+.mainbit a{
+font-family: 'Great Vibes', cursive;
+font-size: 3.5em;
+margin-left: 40px;
+text-align: center;
+}
+.mainbit li{
+font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+font-size: 1.5em;
+list-style: none;
+}
+.container {
+ position: relative;
+}
+img{
+padding: 5px;
+position: relative;
+filter: drop-shadow(-2em -10px #1a4718);
+overflow:hidden;
+}
+@media screen and (max-width: 500px){
+div.mainbit{
+text-align: center;
+}
+ul.mainbit{
+display: inline-block;
+text-align: center;
+
+}
 }
 </style>
 </head>
@@ -28,5 +56,29 @@ background: url("images/selfportrait1.png");
 </div>
 </body>
 
+<body>
+<div class="container">
+<div>
+<img src="images/selfportrait1.png" alt="That's me :)" style="width: 50%" align="right">
+</div>
+<div class="mainbit">
+<a>I am a</a>
+<div class="">
+<ul class="list">
+<li>Graphic Designer</li>
+<li>Video Editor</li>
+<li>Comedian</li>
+<li>Book Writer</li>
+<li>Cardboard Enthusiast</li>
+<li>Bag Chaser</li>
+<li>Girl Gamer</li>
+<li>Thug Shaker</li>
+</ul>
+</div>
+<a>extraordinaire!</a>
+</div>
+</div>
+
+</body>
 
 </html>
