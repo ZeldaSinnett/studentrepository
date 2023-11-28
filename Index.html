@@ -25,11 +25,17 @@ list-style: none;
 .container {
  position: relative;
 }
+.portrait{
+width: 450px;
+    border-radius: 5px;
+    overflow: hidden;
+    object-fit: contain;
+    margin: 0px 0px 0px -20px; 
+}
 img{
-padding: 5px;
 position: relative;
 filter: drop-shadow(-2em -10px #1a4718);
-overflow:hidden;
+margin: 0px 0px 0px -20px; 
 }
 @media screen and (max-width: 500px){
 div.mainbit{
@@ -59,7 +65,7 @@ text-align: center;
 <body>
 <div class="container">
 <div>
-<img src="images/selfportrait1.png" alt="That's me :)" style="width: 50%" align="right">
+<img class="portrait" src="images/selfportrait1.png" alt="That's me :)" height="576px" align="right">
 </div>
 <div class="mainbit">
 <a>I am a</a>
