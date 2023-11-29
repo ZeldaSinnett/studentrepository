@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="zeldastylesheet.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Judson&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
 <style>
 .mainbit {
@@ -26,17 +27,17 @@ list-style: none;
  position: relative;
 }
 .portrait{
-width: 450px;
+width: 100%;
     border-radius: 5px;
     overflow: hidden;
     object-fit: contain;
     margin: 0px 0px 0px -20px; 
-}
-img{
-position: relative;
+    position: relative;
 filter: drop-shadow(-2em -10px #1a4718);
 margin: 0px 0px 0px -20px; 
+position: absolute;
 }
+
 @media screen and (max-width: 500px){
 div.mainbit{
 text-align: center;
@@ -44,7 +45,12 @@ text-align: center;
 ul.mainbit{
 display: inline-block;
 text-align: center;
+}
+}
 
+@media screen and (min-width: 500px){
+.portrait{
+align: right;
 }
 }
 </style>
@@ -53,7 +59,7 @@ text-align: center;
 <body>
 <!--Header-->
 <div class="header">
-  <a href="index.html" class="logo">Zelda Sinnett</a>
+  <a href="index.html" class="logo" style="font-family: 'Judson', serif;">Zelda Sinnett</a>
   <div class="header-right">
     <a  href="portfolio.html">Portfolio</a>
     <a href="contact.html">Contact</a>
@@ -63,10 +69,8 @@ text-align: center;
 </body>
 
 <body>
-<div class="container">
-<div>
-<img class="portrait" src="images/selfportrait1.png" alt="That's me :)" height="576px" align="right">
-</div>
+<div class="pure-g">
+
 <div class="mainbit">
 <a>I am a</a>
 <div class="">
@@ -82,6 +86,8 @@ text-align: center;
 </ul>
 </div>
 <a>extraordinaire!</a>
+</div>
+<div><img class="pure-img portrait" src="images/selfportrait1.png" alt="That's me :)" height="576px">
 </div>
 </div>
 
