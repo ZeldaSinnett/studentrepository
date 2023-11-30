@@ -11,31 +11,26 @@
 <style>
 .mainbit {
 padding: 20px;
+  position: relative;
+  top: auto;
 }
 .mainbit a{
 font-family: 'Great Vibes', cursive;
 font-size: 3.5em;
 margin-left: 40px;
 text-align: center;
+position: relative;
+text-shadow:
+ 4px 2px 0 #FFF; 
+
 }
 .mainbit li{
 font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
 font-size: 1.5em;
 list-style: none;
-}
-.container {
- position: relative;
-}
-.portrait{
-width: 100%;
-    border-radius: 5px;
-    overflow: hidden;
-    object-fit: contain;
-    margin: 0px 0px 0px -20px; 
-    position: relative;
-filter: drop-shadow(-2em -10px #1a4718);
-margin: 0px 0px 0px -20px; 
-position: absolute;
+position: relative;
+ text-shadow:
+       1px 2px 0 #FFF;
 }
 
 @media screen and (max-width: 500px){
@@ -45,14 +40,30 @@ text-align: center;
 ul.mainbit{
 display: inline-block;
 text-align: center;
+body {
+ background-position: bottom;
+ background-size: 50%;
+}
+}
+.mainbit a{
+text-shadow:
+ 3px 0px 0 #FFF; 
+}
+.mainbit li{
+text-shadow:
+       2px 0px 0 #FFF,
+       0px -1px 0 #FFF;
 }
 }
 
-@media screen and (min-width: 500px){
-.portrait{
-align: right;
+body { 
+  background-image: url("images/selfportrait1.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: right;
+
 }
-}
+
 </style>
 </head>
 
@@ -73,7 +84,7 @@ align: right;
 
 <div class="mainbit">
 <a>I am a</a>
-<div class="">
+<div>
 <ul class="list">
 <li>Graphic Designer</li>
 <li>Video Editor</li>
@@ -87,10 +98,8 @@ align: right;
 </div>
 <a>extraordinaire!</a>
 </div>
-<div><img class="pure-img portrait" src="images/selfportrait1.png" alt="That's me :)" height="576px">
+<div class="box"></div>
 </div>
-</div>
-
 </body>
 
 </html>
